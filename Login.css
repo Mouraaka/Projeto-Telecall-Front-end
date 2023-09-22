@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sigmar&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(15, 15, 28);
+    overflow: hidden;
+
+}
+
+.titulo, .login, .senha{
+    color: white;
+    font-size: 15px;
+}
+
+.texto_conta{
+    color: white;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 25px;
+}
+
+.logo{
+    width: 120px;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.inpLogin, .inpSenha, .botao{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+span{
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+.botao{
+    color: white;
+    margin-top: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: rgb(130,31,31);
+    background: linear-gradient(117deg, rgb(202, 28, 28) 16%, rgb(86, 21, 11) 91%);
+}
+
+.botao:hover{
+    background: rgb(130,31,31);
+    background: linear-gradient(117deg, rgb(214, 66, 66) 16%, rgb(123, 45, 33) 91%);
+    
+}
+
+.ancora{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.ancora:hover{
+    color: rgb(159, 75, 74);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto_senha{
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.texto_senha:hover{
+    color: rgb(159, 75, 74);
+}
+
+/* TEMA ESCURO */
+
+.escuro{
+    background-color: rgb(216, 216, 216);
+}
+
+
+@media (max-width:414px){
+   
+    .rodape{
+        font-size: 12px;
+        width: 100%;
+        gap: 30px;
+        align-items: baseline;
+    }
+
+    .ancora{
+        word-break: break-word;
+    }
+
+}

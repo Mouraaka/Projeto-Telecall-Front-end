@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sigmar&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: rgb(15, 15, 28);
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+.nome, .nome-materno, .endereco, .data-nascimento, .sexo, .CPF, 
+.celular, .telefone_celular, .login, .senha, .confirmar_senha, .sexos{
+    color: white;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+span{
+    display: none;
+    color: red;
+    font-size: 15px;
+}
+
+.sexo{
+    font-size: 15px;
+}
+
+.texto_conta{
+    color: white;
+}
+
+.card{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    
+}
+
+.infos-media{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.repetir-senha{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.div-1, .div-2, .div-3, .div-5, .div-6, .div-8, .div-9, .div-4, .div-3-label{
+    width:100%;
+}
+
+.div-3{
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.div-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.radio_e_cpf{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.inpNome, .inpNome-materno, .inpEndereco, .inpData-nascimento, .inpCPF, .inpCelular, .inpTelefone_celular, .inpLogin, .inpSenha, .inpConfirmar_senha{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    color: rgb(116, 116, 116);
+}
+
+.conteiner-nome, .conteiner-data{
+    width: 100%;
+}
+
+
+.inpMasculino, .inpFeminino, .inpOutro{
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    justify-content: baseline;
+}
+
+.sexo-masculino, .sexo-feminino, .sexo-outro{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.div-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    width: 60%;
+    font-size: 15px;
+    padding: 12px;
+    margin-bottom: 8px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: rgb(130,31,31);
+    background: linear-gradient(117deg, rgb(202, 28, 28) 16%, rgb(86, 21, 11) 91%);
+}
+
+.botao:hover{
+    background: rgb(130,31,31);
+    background: linear-gradient(117deg, rgb(214, 66, 66) 16%, rgb(123, 45, 33) 91%);
+    
+}
+
+.logo{
+    width: 120px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.ancora{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.ancora:hover{
+    color: rgb(159, 75, 74);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1280px ){
+ 
+    .logo{
+        display: none;
+    }
+
+
+    .card{
+        display: flex;
+        justify-content: center ;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .nome, .nome-materno, .endereco, .data-nascimento, .sexo, .CPF, .celular, .telefone_celular, .login, .senha, .confirmar_senha{
+        font-size: 12px;
+    }
+
+    span{
+        font-size: 12px;
+    }
+    
+    .inpNome, .inpNome-materno, .inpEndereco, .inpData-nascimento, .inpCPF, .inpCelular, .inpTelefone_celular, .inpLogin, .inpSenha, .inpConfirmar_senha{
+        width: 100%;
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        color: rgb(116, 116, 116);
+    }
+
+    body{
+        overflow: scroll;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .logo{
+        display: none;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center ;
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+        
+    }
+
+    .nome, .nome-materno, .endereco, .data-nascimento, .sexo, .CPF, .celular, .telefone_celular, .login, .senha, .confirmar_senha{
+        font-size: 15px;
+    }
+
+    span{
+        font-size: 15px;
+    }
+    
+    .inpNome, .inpNome-materno, .inpEndereco, .inpData-nascimento, .inpCPF, .inpCelular, .inpTelefone_celular, .inpLogin, .inpSenha, .inpConfirmar_senha{
+        width: 100%;
+        font-size: 15px;
+        margin-top: 1px;
+        margin-bottom: 2px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        color: rgb(116, 116, 116);
+    }
+
+    .infos-superior{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body{
+        
+        overflow: scroll;
+    }
+}

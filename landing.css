@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sigmar&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(15, 15, 28);
+}
+
+.logado{
+    list-style-type: none;
+    display: none;
+    align-items: center;
+}
+
+.logado li button{
+    border: none;
+    background-color: rgb(58, 109, 179);
+    color: white;
+    font-size: 19px;
+    width: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.logado li button:hover{
+    background-color: rgb(113, 150, 203);
+}
+
+.nome_usuario{
+    font-size: 19px;
+    color: white;
+}
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* CABEÇALHO */
+
+.cabecalho{
+    display: flex;
+    height: 10%;
+    justify-content: space-around;
+    background-color: rgb(15, 15, 33);
+}
+
+#sol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+
+}
+
+#sol{
+    align-items: center;
+}
+
+.label-tema{
+    cursor: pointer;
+}
+#cadeado{
+    color: pink;
+}
+
+.tema{
+    
+    width: 50%;
+    margin-top: 33px;
+}
+
+.tema > input{
+    display: none;
+
+}
+
+.logo_visual{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    width: 10%;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.lista{ 
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li a{
+    color: white;
+    margin-top: 300px;
+    transition: 0.4s;
+}
+
+li a:hover{
+    color: #0e4e7d;
+}
+
+.lista_conta{
+    list-style-type: none;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+/*MENU*/
+
+#botao_menu{
+    display: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.section_menu{
+    display: none;
+    justify-content: center;
+    margin-left: 230px;
+}
+
+.menu{
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    background-color: rgb(17, 17, 42);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+}
+
+.inp_tema{
+    display: none;
+}
+
+.lista_menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    font-size: 20px;
+    list-style-type: none;
+
+}
+
+.div_xis{
+    width: 100%;
+}
+
+#xis{
+    font-size: 60px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+.bi-brightness-high-fill{
+    margin-top: 20px;
+}
+
+
+
+/* Centro da Página */ 
+
+.centro-pagina{
+    display: flex;
+    width: 100%;
+    height:80vh;
+}
+
+.conteiner-centro{
+    display: flex;
+    align-items: center;
+}
+
+.quem_somos{
+    color: rgb(58, 109, 179);
+    font-size: 30px;
+}
+
+.quem_somos_texto{
+    margin-top: 20px;
+    color: white;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.imagem_cartao{
+    width: 500px;
+}
+
+.lado-esquerdo{
+    width: 50%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-content: center;
+}
+
+.lado-direito{
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+/* SERVIÇOS */
+
+.area-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap:120px;
+    width: 100%;
+    height: 40%;
+}
+
+.texto_cadeado,
+.texto_celular,
+.texto_verificado,
+.texto_chat{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+#icone_cadeado,
+#icone_celular,
+#icone_verificado,
+#icone_chat{
+    font-size: 120px;
+    color: white;
+    transition: 0.4s;
+}
+
+._2af, 
+.numero_mascara,
+.verified,
+.sms{
+    background-color: rgb(17, 17, 42);
+    width: 12%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 5px 10px 18px rgb(8, 8, 19);
+}
+
+
+
+.conteiner_cadeado,
+.conteiner_celular,
+.conteiner_verificado,
+.conteiner_chat{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+._2af:hover{
+    opacity: 0.6;
+}
+
+.numero_mascara:hover{
+    opacity: 0.6;
+}
+
+.verified:hover{
+    opacity: 0.6;
+}
+
+.sms:hover{
+    opacity: 0.6;
+}
+
+/* RODAPÉ */
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(15, 15, 33);
+}
+
+.logo_rodape{
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    
+}
+
+.redes{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.span-rodape{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.span-rodape:hover{
+    color: #0e4e7d;
+}
+
+.lado-esquerdo-rodape{
+    width: 50%;
+}
+
+.lado-direito-rodape{
+    margin-top: 40px;
+    width: 26%;
+}
+
+.copyright{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(15, 15, 33);
+}
+
+.copyright_texto{
+    color: rgb(145, 145, 145);
+}
+
+/* TEMA ESCURO */
+
+.escuro{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 110vh;
+    background-color: rgb(216, 216, 216);
+}
+
+.escuro .quem_somos_texto{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 19px;
+}
+
+.escuro .cabecalho{
+    background-color:  rgb(241, 241, 241);
+}
+
+.escuro li a{
+    color: black;
+}
+
+.escuro .rodape{
+    background-color: rgb(241, 241, 241);
+}
+
+.escuro #rede{
+    color: black;
+}
+
+.escuro .copyright{
+    background-color:  rgb(241, 241, 241);
+}
+
+.escuro #sol{
+    color: black;
+}
+
+.escuro ._2af{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 5px 10px 18px rgb(148, 148, 148);
+}
+
+.escuro .numero_mascara{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 5px 10px 18px rgb(148, 148, 148);
+}
+
+.escuro .verified{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 5px 10px 18px rgb(148, 148, 148);
+}
+
+.escuro .sms{
+    background-color: rgb(241, 241, 241);
+    box-shadow: 5px 10px 18px rgb(148, 148, 148);
+}
+
+.escuro #icone_cadeado{
+    color: rgb(113, 113, 113);
+}
+
+.escuro #icone_celular{
+    color: rgb(113, 113, 113);
+}
+
+.escuro #icone_verificado{
+    color: rgb(113, 113, 113);
+}
+
+.escuro #icone_chat{
+    color: rgb(113, 113, 113);
+}
+
+.escuro .texto_cadeado{
+    color: black;
+}
+
+.escuro .texto_celular{
+    color: black;
+}
+
+.escuro .texto_verificado{
+    color: black;
+}
+
+.escuro .texto_chat{
+    color: black;
+}
+
+.escuro #botao_menu{
+    color: black;
+}
+
+.escuro .menu{
+    background-color: rgb(241, 241, 241);
+}
+
+.escuro #xis{
+    color: black;
+}
+
+.escuro .nome_usuario{
+    color: rgb(0, 0, 0);
+}
+
+/* ----------- */
+
+@media (max-width: 1400px){
+    .area-servicos{
+
+        gap: 60px;
+        
+    }
+
+    ._2af, 
+    .numero_mascara,
+    .verified,
+    .sms{
+        width: 17%;
+    }
+}
+
+@media (max-width: 1210px){
+
+    .lista_conta{
+        align-items: center;
+    }
+
+    .lista{
+        display: none;
+    }
+
+    #botao_menu{
+        display: flex;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .conteiner-centro{
+        flex-direction: column;
+    }
+
+    .centro-pagina{
+        height: 129vh;
+    }
+
+    .lado-esquerdo{
+        margin-left: 0px;
+    }
+
+    .lado-direito{
+            display: none;
+        }
+
+    .tema{
+        display: none;
+    }
+
+    .area-servicos{
+        flex-direction: column;
+        height: 220%;
+        align-items: center;
+    }
+
+    ._2af, 
+    .numero_mascara,
+    .verified,
+    .sms{
+        width: 30%;
+    }
+
+
+}
+
+@media (max-width: 750px){
+
+    
+
+    ._2af, 
+    .numero_mascara,
+    .verified,
+    .sms{
+        width: 50%;
+    }
+
+    .centro-pagina{
+        height: 75vh;
+    }
+
+}
+
+@media (max-width: 570px){
+    .logo_visual{
+        display: none;
+    }
+
+    .cabecalho{
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .lado-esquerdo{
+        width: 70%;
+    }
+}
+
+@media (max-width: 408px){
+
+    .lado-esquerdo{
+        margin-top: 100px;
+        width: 90%;
+    }
+}
