@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecall! - 2AF!</title>
+
+    <link rel="icon" type="image/png" href="IMG_Servicos/Logo-telecall.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="servicos/CSS/google_verified.css"/>
+</head>
+<body onload="trocar_nome()">
+    <!--CABEÇALHO-->
+    <header class="cabecalho">
+
+        <div class="logo_visual">
+            <a href="landing.html"><img class="logo" src="IMG/telecall-logo-removebg-preview.png" alt="Logo da Telecall"></a>
+        </div>
+
+        <ul class="lista">
+            <li><a href="#Internet">Internet</a></li>
+            <li><a href="#Telefonia">Telefonia</a></li>
+            <li><a href="#Rede">Rede</a></li>
+            <li><a href="#Mobilidade">Mobilidade</a></li>
+            <li><a href="#Evento">Evento</a></li>
+            <li><a href="#Outros">Outros</a></li>
+        </ul>
+
+        <ul id="logado" class="logado" >
+            <li><button onclick="sair_conta()" >sair</button></li>
+            <li><div id="nome_usuario" class="nome_usuario" >nome</div></li>
+        </ul>
+
+        <i id="botao_menu" onclick="abrirmenu()" class="bi bi-list"></i>
+        
+        <ul id="lista_conta" class="lista_conta">
+            <li><a href="Login.html">Entrar</a></li>
+            <li><a href="Register.html">Cadastro<a></li>
+            <li></li>
+        </ul>
+
+        <div class="tema">
+            <input type="checkbox" name="tema" id="tema">
+
+            <label class="label-tema" id="tema" for="tema">
+                <i id="sol" class="bi bi-brightness-high-fill"></i>
+            </label>
+        </div>
+
+    </header>
+
+        <section id="menu_aberto" class="section_menu">
+            <section  class="menu">
+                <div class="div_xis" >
+                <i id="xis" onclick="fecharmenu()" class="bi bi-x"></i>
+                </div>
+                <ul class="lista_menu">
+                    <li><a href="#Internet">Internet</a></li>
+                    <li><a href="#Telefonia">Telefonia</a></li>
+                    <li><a href="#Rede">Rede</a></li>
+                    <li><a href="#Mobilidade">Mobilidade</a></li>
+                    <li><a href="#Evento">Evento</a></li>
+                    <li><a href="#Outros">Outros</a></li>
+
+                    <input class="inp_tema" type="checkbox" name="tema" id="tema">
+
+                    <label class="label-tema" id="tema" for="tema">
+                    <i id="sol" class="bi bi-brightness-high-fill"></i>
+                    </label>
+                     
+                </ul>
+            </section>
+        </section>
+    
+    <!--CENTRO-->
+    <main>
+
+        <div class="icone" >
+            <i id="icone_cadeado" class="bi bi-patch-check-fill"></i>
+            <p>Google Verified</p>
+        </div>
+
+        <div class="texto_1">
+        <section class="section_como_funciona">
+            <h1>Como Funciona?</h1>
+            <p>
+                Serviço de verificação de chamadas telefônicas que revela para o usuário final o nome da companhia que liga e até a razão da ligação
+                Com as APIs de CPaaS Telecall e a verificação de chamadas mostra o logotipo da empresa e o nome da pessoa que ligou para o cliente,  o motivo da chamada e um símbolo de verificação indicando que a empresa foi autenticada pelo Google.
+
+            </p>
+        </section>
+        </div>
+        <div class="texto_2">
+            <section class="section_beneficios">
+                <h1>Benefícios</h1>
+                <p>
+                    Comunicação rápida, efetiva e escalável.
+                    Baixo custo.
+                    API simples e de rápida implementação.
+                    Maior segurança para o cliente.
+                    Alta taxa de aceitação.
+                </p>
+            </section>
+            </div>
+
+            <div class="div-btn">
+                <button class="btn_interessado" >Estou interessado!</button>
+            </div>
+
+    </main>
+
+    <!-- RODAPE -->
+    
+    <footer class="rodape">
+
+        <section class="lado-esquerdo-rodape">
+            <img class="logo_rodape" src="IMG/Logo-telecall.png" alt="Logo telecall">
+        </section>
+
+        <section class="lado-direito-rodape">
+
+        <div class="redes">
+                        <span><a id="rede" class="span-rodape" 
+                            href="https://www.instagram.com/telecallbr/">
+                            Instagram</a></span>
+
+                        <span><a id="rede" class="span-rodape" 
+                            href="https://www.facebook.com/TelecallBr">
+                            Facebook</a></span>
+
+                        <span><a id="rede" class="span-rodape" 
+                            href="https://www.linkedin.com/company/telecall/">
+                            Linkedin</a></span>
+        </div>
+
+        </section>
+
+    </footer>
+
+
+    <script type="text/javascript" src="servicos/JS/google_verified.js" ></script>
+    
+
+</body>
+</html>

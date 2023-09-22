@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bem-vindo(a) de volta!</title>
+
+
+    <link rel="stylesheet" href="Login.css">
+    
+
+    <link rel="icon" type="image/png" href="IMG/Logo-telecall.png"/>
+
+</head>
+<body>
+    <main class="conteiner">
+        </div>
+        
+        <main class="card">
+
+        <img class="logo" src="IMG/Logo-telecall.png" alt="Logo Telecall">
+
+            <form onsubmit="return enviardados();"  on action="landing.html" method="get" name="dados">
+
+                <div>
+                <label class="login" for="login">Login<br/></label>
+                    <input class="inpLogin" oninput="verificar_login()" type="text" id="login" name="login" minlength="6" maxlength="6" placeholder="Login"/>
+                        <span id="span_login">Preencha o campo de login.</span>
+                </div>
+
+                <div>
+                <label class="senha" for="senha">Senha<br/></label>
+                    <input class="inpSenha" type="password" oninput="verificar_senha()" id="senha" name="senha" minlength="8" maxlength="8" placeholder="Digite sua senha"/>
+                        <span id="span_senha">Preencha o campo de senha.</span>
+                </div>
+
+                <input class="botao" type="submit" onclick="local()" value="ENTRAR" />
+
+                <div class="rodape">
+                    <p class="texto_conta">Não tem conta? <a class="ancora" href="Register.html">crie aqui.</a></p>
+
+                    <a class="texto_senha" href="#">Esqueci a senha.</a>
+                </div>
+            </form>
+        </main>
+    </main>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

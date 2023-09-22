@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Junte-se a nós!</title>
+
+    <link rel="icon" type="image/png" href="IMG/Logo-telecall.png"/>
+
+    <link rel="stylesheet" href="Register.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+    
+
+</head>
+<body>  
+        <main class="card">
+
+        <img class="logo" src="IMG/Logo-telecall.png" alt="Logo Telecall">
+
+            <form onsubmit="return enviardados();" action="landing.html" id="formulario" name="formulario" method="get">
+
+                <!-- AREA DOS INPUTS! -->
+
+                <!--parte superior-->
+                <div class="infos-superior">
+
+                    <div class="div-1">
+
+                        <div>
+                        <label class="nome" for="nome">Nome<br/></label>
+                            <input class="inpNome" type="text" id="nome" name="nomenome" placeholder="Nome completo" oninput="verificar_nome()"/>
+                            <span id="span_nome" >O campo deve conter entre 15 á 60 caracteres.</span>
+                        </div>
+
+                        <div>
+                        <label class="endereco" for="endereco">Endereço<br/></label>
+                            <input class="inpEndereco" type="text" id="endereco" name="endereco" 
+                            placeholder="Endereço completo" oninput="verificar_endereco()"/>
+                            <span id="span_endereco" >O campo é obrigatório.</span>
+                        </div>
+
+                    </div>
+
+                    <div class="div-2">
+
+                        <div class="conteiner-nome">
+                            <label class="nome-materno" for="nome-manterno">Nome Materno<br/></label>
+                                <input class="inpNome-materno" type="text" id="nome-materno" name="nomematerno" 
+                                placeholder="Nome Materno" oninput="verificar_nome_materno()"/>
+                                <span id="span_nome_materno" >O campo deve conter entre 15 á 60 caracteres.</span>
+                        </div>
+
+                        <div class="conteiner-data">
+                            <label class="data-nascimento" for="data-nascimento">Data de nascimento<br/></label>
+                                <input class="inpData-nascimento" type="text" name="datanascimento" id="data-nascimento" placeholder="Sua data de nascimento" 
+                                oninput="verificar_data()"/>
+                                <span id="span_data" >O campo é obrigatório.</span>
+
+                            <script>
+                                $('.inpData-nascimento').mask('00/00/0000');
+                            </script>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="radio_e_cpf">
+                    <!--input radio-->
+                    <div class="div-3-label">
+                        <label class="sexos" for="">Sexo</label>
+
+                        <div class="div-3">
+
+                            <div class="sexo-masculino">
+                                <label class="sexo" for="sexo">Masculino</label>
+                                    <input class="inpMasculino" type="radio" id="masculino" value="M" name="sexo"/>
+                            </div>
+
+                            <div class="sexo-feminino">
+                                <label class="sexo" for="sexo">Feminino</label>
+                                    <input class="inpFeminino" type="radio" id="feminino" value="F" name="sexo"/>
+                            </div>
+
+                            <div class="sexo-outro">
+                                <label class="sexo" for="sexo">Outro</label>
+                                    <input class="inpOutro" type="radio" id="outro" value="O" name="sexo"/>
+                            </div>
+
+                            <span id="span_sexo">O campo é obrigatório.</span>
+
+                        </div>
+                        
+                    </div>
+
+                    <!--CPF-->
+                    <div class="div-4">
+
+                        <label class="CPF" for="CPF">CPF<br/></label>
+                            <input class="inpCPF" type="text" id="CPF" name="CPF" placeholder="xxx.xxx.xxx-xx" 
+                         oninput="verificar_cpf()" autocomplete="off">
+
+                        <span id="span_CPF" >O campo é obrigatório.</span>
+                            
+                            <script>
+                                $('.inpCPF').mask('000.000.000-00', {reverse: false});
+                           </script>
+                            
+                    </div>
+                </div>
+
+                <!--parte media-->
+                <div class="infos-media">
+
+                    <div class="div-5">
+
+                        <label class="celular" for="celular">N.º celular<br/></label>                        
+                            <input class="inpCelular" type="text" id="celular" name="celular" 
+                            value="(+55)" oninput="verificar_celular()"/>
+                            <span id="span_celular" >O campo é obrigatório e deve ser válido.</span>
+                    
+                            <script>
+                                $('.inpCelular').mask('(+00) 00-00000000');
+                            </script>
+                    
+                    </div>
+
+                    <div class="div-6">
+
+                        <label class="telefone_celular" for="celular">N.º telefone fixo<br/></label>                        
+                            <input class="inpTelefone_celular" type="text" id="telefone_celular" 
+                            name="telefone_celular" value="(+55)" oninput="verificar_telefone()" />
+                            <span id="span_telefone">O campo é obrigatório e deve ser válido.</span>
+                    
+                            <script>
+                                $('.inpTelefone_celular').mask('(+00) 00-00000000');
+                            </script>
+                    </div>
+
+                </div>
+                
+                <div class="infos-inferior">
+
+                    <div class="div-7">
+
+                        <label class="login" for="login">Login<br/></label>
+                            <input class="inpLogin" type="text" id="login" name="login" 
+                            placeholder="Seu novo login" maxlength="6" oninput="verificar_login()"/>
+                            <span id="span_login" >O login deve conter 6 caracteres.</span>
+                    </div>
+
+                <div class="repetir-senha">
+                    <div class="div-8">
+
+                        <label class="senha" for="senha">Senha<br/></label>
+                            <input class="inpSenha" type="password" id="senha" maxlength="8" name="senha" placeholder="Nova senha"
+                             oninput="verificar_senha()"/>
+                             <span id="span_senha" >A senha deve conter 8 caracteres.</span>
+
+                    </div>
+
+                    <div class="div-9">
+
+                        <label class="confirmar_senha" for="confirmar_senha">Confirmar senha<br/></label>
+                            <input class="inpConfirmar_senha" type="password" id="confirmar_senha" maxlength="8" name="confirmar_senha" 
+                            placeholder="Digite a senha novamente" oninput="verificar_confirmar()"/>
+                            <span id="span_confirmar" >As senhas devem ser iguais.</span>
+
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="div-botao">
+                    <input class="botao" onsubmit="validar()" type="submit" value="CADASTRAR" />
+                </div>
+                <div class="rodape">
+                    <p class="texto_conta">Já tem uma conta? <a class="ancora" href="Login.html">Entre aqui.</a></p>
+                </div>
+                
+            </form>
+        </main>
+ 
+ 
+        <script type="text/javascript" src="register.js"></script>
+</body>
+
+
+
+</html>
